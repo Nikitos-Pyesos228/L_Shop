@@ -1,33 +1,14 @@
 {
   "compilerOptions": {
-    // Папки: где лежит исходный код (src) и куда компилировать (dist)
+    "target": "esnext",
+    "module": "nodenext",
     "rootDir": "./src",
     "outDir": "./dist",
-
-    // Базовые настройки окружения
-    "module": "nodenext",
-    "target": "esnext",
-    
-    // Строгая типизация (ОБЯЗАТЕЛЬНО ПО ТЗ)
     "strict": true,
     "noImplicitAny": true,
-
-    // Дополнительные строгие проверки
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Остальные рекомендуемые опции
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-    
-    // Для совместимости импортов
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "nodenext"
   }
 }
