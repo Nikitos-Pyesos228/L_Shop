@@ -1,1 +1,124 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Macallan 25 Year Old Sherry Oak",
+    "description": "Элитный шотландский односолодовый виски с нотами сушеных фруктов и специй.",
+    "category": "whiskey",
+    "price": 2500,
+    "image": "https://via.placeholder.com/200x300?text=Macallan+25"
+  },
+  {
+    "id": 2,
+    "title": "Château Margaux 2015",
+    "description": "Премиальное французское красное вино, идеальный баланс танинов и ягодных нот.",
+    "category": "wine",
+    "price": 1800,
+    "image": "https://via.placeholder.com/200x300?text=Chateau+Margaux"
+  },
+  {
+    "id": 3,
+    "title": "Louis XIII de Rémy Martin",
+    "description": "Легендарный коньяк, бленд из 1200 о-де-ви из региона Гранд Шампань.",
+    "category": "cognac",
+    "price": 3500,
+    "image": "https://via.placeholder.com/200x300?text=Louis+XIII"
+  },
+  {
+    "id": 4,
+    "title": "Yamazaki 18 Year Old",
+    "description": "Японский виски, обладатель множества наград. Глубокий вкус с оттенками шоколада.",
+    "category": "whiskey",
+    "price": 1200,
+    "image": "https://via.placeholder.com/200x300?text=Yamazaki+18"
+  },
+  {
+    "id": 5,
+    "title": "Dom Pérignon Plénitude 2 (P2) 2002",
+    "description": "Элитное шампанское (вино) с невероятной свежестью и сложностью аромата.",
+    "category": "wine",
+    "price": 500,
+    "image": "https://via.placeholder.com/200x300?text=Dom+Perignon"
+  },
+  {
+    "id": 6,
+    "title": "Hennessy Richard",
+    "description": "Редчайший коньяк, созданный в честь основателя дома Хеннесси.",
+    "category": "cognac",
+    "price": 4200,
+    "image": "https://via.placeholder.com/200x300?text=Hennessy+Richard"
+  },
+  {
+    "id": 7,
+    "title": "Pappy Van Winkle's 23 Year",
+    "description": "Самый желанный бурбон в мире. Сладкий карамельный профиль с дубовыми нотами.",
+    "category": "whiskey",
+    "price": 3000,
+    "image": "https://via.placeholder.com/200x300?text=Pappy+Van+Winkle"
+  },
+  {
+    "id": 8,
+    "title": "Screaming Eagle Cabernet Sauvignon 2018",
+    "description": "Культовое калифорнийское вино. Невероятная плотность и долгое послевкусие.",
+    "category": "wine",
+    "price": 3200,
+    "image": "https://via.placeholder.com/200x300?text=Screaming+Eagle"
+  },
+  {
+    "id": 9,
+    "title": "Courvoisier L'Essence",
+    "description": "Эксклюзивный коньяк, объединяющий спирты вековой выдержки.",
+    "category": "cognac",
+    "price": 2800,
+    "image": "https://via.placeholder.com/200x300?text=Courvoisier"
+  },
+  {
+    "id": 10,
+    "title": "Dalmore 62",
+    "description": "Один из самых дорогих виски в мире, выпущенный ограниченным тиражом.",
+    "category": "whiskey",
+    "price": 25000,
+    "image": "https://via.placeholder.com/200x300?text=Dalmore+62"
+  },
+  {
+    "id": 11,
+    "title": "Pétrus Pomerol 2010",
+    "description": "Легендарное бордоское вино. Глубокий, мощный вкус с нотами трюфеля, шелковицы и темных специй.",
+    "category": "wine",
+    "price": 4500,
+    "image": "https://via.placeholder.com/200x300?text=Petrus+Pomerol"
+  },
+  {
+    "id": 12,
+    "title": "Glenfiddich 50 Year Old",
+    "description": "Один из самых редких односолодовых виски. Выдерживался полвека в дубовых бочках, имеет богатый медовый аромат.",
+    "category": "whiskey",
+    "price": 35000,
+    "image": "https://via.placeholder.com/200x300?text=Glenfiddich+50"
+  },
+  {
+    "id": 13,
+    "title": "Martell L'Or de Jean Martell",
+    "description": "Вершина коньячного искусства, купаж из сотен редких о-де-ви, некоторым из которых более 100 лет.",
+    "category": "cognac",
+    "price": 3800,
+    "image": "https://via.placeholder.com/200x300?text=LOr+de+Jean+Martell"
+  },
+  {
+    "id": 14,
+    "title": "Domaine de la Romanée-Conti 2015",
+    "description": "Самое престижное вино Бургундии. Невероятная элегантность, шелковистая текстура и богатство ароматов.",
+    "category": "wine",
+    "price": 18000,
+    "image": "https://via.placeholder.com/200x300?text=Romanee-Conti"
+  },
+  {
+    "id": 15,
+    "title": "Hibiki 30 Year Old",
+    "description": "Шедевр японского купажа. Обладает глубоким, сложным и невероятно мягким вкусом с нотами мармелада и корицы.",
+    "category": "whiskey",
+    "price": 4800,
+    "image": "https://via.placeholder.com/200x300?text=Hibiki+30"
+  }
+]
+
+
