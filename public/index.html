@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>L-SHOP | Elite Alcohol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">L-Shop Collection</div>
+        <div id="user-info" class="user-controls">
+            <!-- Кнопка Вход или имя юзера -->
+        </div>
+    </header>
+
+    <main>
+        <!-- Форма регистрации -->
+        <div id="reg-card" class="auth-card">
+            <h2>Регистрация</h2>
+            <form data-registration id="regForm">
+                <div class="form-group"><input type="text" id="rName" placeholder="Полное имя" required></div>
+                <div class="form-group"><input type="email" id="rEmail" placeholder="Email адрес" required></div>
+                <div class="form-group"><input type="password" id="rPass" placeholder="Пароль" required></div>
+                <button type="submit" class="btn-primary">Создать аккаунт</button>
+            </form>
+            <div class="toggle-link">Уже есть членство? <span onclick="showLogin()">Войти</span></div>
+        </div>
+
+        <!-- Форма логина -->
+        <div id="login-card" class="auth-card hidden">
+            <h2>Вход в клуб</h2>
+            <form id="loginForm">
+                <div class="form-group"><input type="email" id="lEmail" placeholder="Email" required></div>
+                <div class="form-group"><input type="password" id="lPass" placeholder="Пароль" required></div>
+                <button type="submit" class="btn-primary">Войти</button>
+            </form>
+            <div class="toggle-link">Впервые у нас? <span onclick="showReg()">Стать участником</span></div>
+        </div>
+
+        <!-- Закрытый контент -->
+        <div id="content" class="welcome-msg hidden">
+            <h1 id="welcome-name">Добро пожаловать</h1>
+            <p>Ваша персональная коллекция элитных напитков скоро будет доступна.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
