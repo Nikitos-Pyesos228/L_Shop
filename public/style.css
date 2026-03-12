@@ -1,0 +1,125 @@
+:root {
+    --gold: #D4AF37;
+    --dark-bg: #121212;
+    --card-bg: #1E1E1E;
+    --text: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Хедер */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid var(--gold);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--gold);
+    text-transform: uppercase;
+}
+
+.user-controls button {
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.user-controls button:hover {
+    background: var(--gold);
+    color: black;
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Карточки форм */
+.auth-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.auth-card h2 {
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.form-group { margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    background: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 6px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus { border-color: var(--gold); }
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    background: var(--gold);
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3); }
+
+.toggle-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.toggle-link span { color: var(--gold); cursor: pointer; text-decoration: underline; }
+
+.hidden { display: none !important; }
+
+/* Каталог заглушка */
+.welcome-msg { text-align: center; }
+.welcome-msg h1 { font-size: 3rem; color: var(--gold); }
