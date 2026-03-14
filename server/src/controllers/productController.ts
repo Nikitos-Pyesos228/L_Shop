@@ -1,14 +1,9 @@
 import { Request, Response } from 'express';
-import { JsonDB } from '../services/JsonDB';
+import { JsonDB } from '../services/db.service';
 
-interface ProductQuery {
-  search?: string;
-  category?: string;
-  sort?: string;
-}
-
-interface IProductData {
-  id: number;
+// Описываем структуру продукта, чтобы не использовать any
+interface IProduct {
+  id: string;
   title: string;
   description: string;
   category: string;
@@ -16,27 +11,40 @@ interface IProductData {
   image: string;
 }
 
+// Описываем типы для Query-параметров (поиск, фильтр, сортировка)
+interface ProductQuery {
+  search?: string;
+  category?: string;
+  sort?: string;
+}
+
 export const getProducts = async (
-  req: Request<{}, {}, {}, ProductQuery>,
+  req: Request<{}, {}, {}, ProductQuery>, 
   res: Response
 ) => {
   try {
     const { search, category, sort } = req.query;
-    const allProducts = await JsonDB.read<IProductData[]>('products.json'); 
-    let results = [...allProducts];
 
+    // Читаем данные из JSON через твой сервис
+    const allProducts = await JsonDB.read<IProduct>('products'); 
+    
+    let results: IProduct[] = [...allProducts];
+
+    // Фильтрация по категории (вино, виски и т.д.)
     if (category) {
-      results = results.filter(p => p.category === category);
+      results = results.filter((p: IProduct) => p.category === category);
     }
 
+    // Поиск по названию или описанию (регистронезависимый)
     if (search) {
       const query = search.toLowerCase();
-      results = results.filter(p => 
+      results = results.filter((p: IProduct) => 
         p.title.toLowerCase().includes(query) || 
         p.description.toLowerCase().includes(query)
       );
     }
 
+    // Сортировка по цене
     if (sort === 'price_asc') {
       results.sort((a, b) => a.price - b.price);
     } else if (sort === 'price_desc') {
@@ -45,6 +53,7 @@ export const getProducts = async (
 
     res.json(results);
   } catch (error) {
-    res.status(500).json({ message: "Ошибка сервера" });
+    console.error('Ошибка в ProductController:', error);
+    res.status(500).json({ message: "Ошибка сервера при получении товаров" });
   }
 };

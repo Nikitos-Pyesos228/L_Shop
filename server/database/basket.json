@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "userId": "1773470848257",
+    "items": [
+      {
+        "count": 1,
+        "product": {
+          "id": 1,
+          "title": "Macallan 25 Year Old Sherry Oak",
+          "description": "Элитный шотландский односолодовый виски с нотами сушеных фруктов и специй.",
+          "category": "whiskey",
+          "price": 2500,
+          "image": "https://via.placeholder.com/200x300?text=Macallan+25"
+        }
+      },
+      {
+        "count": 2,
+        "product": {
+          "id": 2,
+          "title": "Château Margaux 2015",
+          "description": "Премиальное французское красное вино, идеальный баланс танинов и ягодных нот.",
+          "category": "wine",
+          "price": 1800,
+          "image": "https://via.placeholder.com/200x300?text=Chateau+Margaux"
+        }
+      },
+      {
+        "count": 1,
+        "product": {
+          "id": 3,
+          "title": "Louis XIII de Rémy Martin",
+          "description": "Легендарный коньяк, бленд из 1200 о-де-ви из региона Гранд Шампань.",
+          "category": "cognac",
+          "price": 3500,
+          "image": "https://via.placeholder.com/200x300?text=Louis+XIII"
+        }
+      }
+    ]
+  }
+]
