@@ -1,74 +1,36 @@
-import { Request, Response } from 'express';
+import { Response } from 'express';
 import { JsonDB } from '../services/db.service';
 
-interface IProduct {
-  id: string;
-  title: string;
-  price: number;
-  image: string;
-  category: string;
-}
-
-interface IBasketItem {
-  count: number;
-  product: IProduct;
-}
-
-interface IBasket {
-  userId: string;
-  items: IBasketItem[];
-}
-
-export const addToBasket = async (req: Request, res: Response) => {
+export const addToBasket = async (req: any, res: Response) => {
   try {
-    const userId = req.cookies['session_id'];
-    if (!userId) {
-      return res.status(401).json({ message: 'Сначала нужно войти в аккаунт' });
-    }
-
     const { productId, count } = req.body;
-    const baskets = await JsonDB.read<IBasket>('basket');
-    const products = await JsonDB.read<IProduct>('products');
+    const user = req.session.user; // Берем из сессии!
 
-    const product = products.find((p) => p.id === productId);
-    if (!product) {
-      return res.status(404).json({ message: 'Товар не найден' });
-    }
+    if (!user) return res.status(401).json({ message: 'Войдите!' });
 
-    let userBasket = baskets.find((b) => b.userId === userId);
+    const baskets = await JsonDB.read<any>('baskets');
+    let userBasket = baskets.find((b: any) => b.userId === user.id);
 
     if (!userBasket) {
-      userBasket = { userId, items: [] };
+      userBasket = { userId: user.id, items: [] };
       baskets.push(userBasket);
     }
 
-    const existingItem = userBasket.items.find((item) => item.product.id === productId);
+    const item = userBasket.items.find((i: any) => i.productId === productId);
+    if (item) item.count += count;
+    else userBasket.items.push({ productId, count });
 
-    if (existingItem) {
-      existingItem.count += (count || 1);
-    } else {
-      userBasket.items.push({ count: (count || 1), product });
-    }
-
-    await JsonDB.write('basket', baskets);
-    res.json({ message: 'Товар добавлен в корзину', basket: userBasket });
-  } catch (error) {
-    res.status(500).json({ message: 'Ошибка при добавлении в корзину' });
+    await JsonDB.write('baskets', baskets);
+    res.json(userBasket);
+  } catch (e) {
+    res.status(500).json({ message: 'Ошибка корзины' });
   }
 };
 
-export const getBasket = async (req: Request, res: Response) => {
-  try {
-    const userId = req.cookies['session_id'];
-    if (!userId) {
-      return res.status(401).json({ message: 'Авторизуйтесь для доступа к корзине' });
-    }
-
-    const baskets = await JsonDB.read<IBasket>('basket');
-    const userBasket = baskets.find((b) => b.userId === userId);
-
-    res.json(userBasket || { userId, items: [] });
-  } catch (error) {
-    res.status(500).json({ message: 'Ошибка при получении корзины' });
-  }
+// Добавь пустые функции, если они у тебя были в роутере, чтобы не падало
+export const getBasket = async (req: any, res: Response) => {
+    const user = req.session.user;
+    if (!user) return res.status(401).send();
+    const baskets = await JsonDB.read<any>('baskets');
+    res.json(baskets.find((b: any) => b.userId === user.id) || { items: [] });
 };

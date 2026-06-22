@@ -1,0 +1,19 @@
+[
+  {
+    "userId": "1773470848257",
+    "items": [
+      {
+        "productId": 2,
+        "count": 1
+      },
+      {
+        "productId": 1,
+        "count": 1
+      },
+      {
+        "productId": 11,
+        "count": 1
+      }
+    ]
+  }
+]
