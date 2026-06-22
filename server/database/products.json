@@ -5,7 +5,8 @@
     "description": "Элитный шотландский односолодовый виски с нотами сушеных фруктов и специй.",
     "category": "whiskey",
     "price": 2500,
-    "image": "https://via.placeholder.com/200x300?text=Macallan+25"
+    "image": "https://via.placeholder.com/200x300?text=Macallan+25",
+    "tags": ["whiskey", "scotch", "aged", "sherry"]
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "description": "Премиальное французское красное вино, идеальный баланс танинов и ягодных нот.",
     "category": "wine",
     "price": 1800,
-    "image": "https://via.placeholder.com/200x300?text=Chateau+Margaux"
+    "image": "https://via.placeholder.com/200x300?text=Chateau+Margaux",
+    "tags": ["wine", "french", "red", "luxury"]
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "description": "Легендарный коньяк, бленд из 1200 о-де-ви из региона Гранд Шампань.",
     "category": "cognac",
     "price": 3500,
-    "image": "https://via.placeholder.com/200x300?text=Louis+XIII"
+    "image": "https://via.placeholder.com/200x300?text=Louis+XIII",
+    "tags": ["cognac", "premium", "french"]
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "description": "Японский виски, обладатель множества наград. Глубокий вкус с оттенками шоколада.",
     "category": "whiskey",
     "price": 1200,
-    "image": "https://via.placeholder.com/200x300?text=Yamazaki+18"
+    "image": "https://via.placeholder.com/200x300?text=Yamazaki+18",
+    "tags": ["whiskey", "japanese", "aged"]
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "description": "Элитное шампанское (вино) с невероятной свежестью и сложностью аромата.",
     "category": "wine",
     "price": 500,
-    "image": "https://via.placeholder.com/200x300?text=Dom+Perignon"
+    "image": "https://via.placeholder.com/200x300?text=Dom+Perignon",
+    "tags": ["wine", "sparkling", "french", "premium"]
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "description": "Редчайший коньяк, созданный в честь основателя дома Хеннесси.",
     "category": "cognac",
     "price": 4200,
-    "image": "https://via.placeholder.com/200x300?text=Hennessy+Richard"
+    "image": "https://via.placeholder.com/200x300?text=Hennessy+Richard",
+    "tags": ["cognac", "rare", "french"]
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "description": "Самый желанный бурбон в мире. Сладкий карамельный профиль с дубовыми нотами.",
     "category": "whiskey",
     "price": 3000,
-    "image": "https://via.placeholder.com/200x300?text=Pappy+Van+Winkle"
+    "image": "https://via.placeholder.com/200x300?text=Pappy+Van+Winkle",
+    "tags": ["whiskey", "bourbon", "usa", "aged"]
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "description": "Культовое калифорнийское вино. Невероятная плотность и долгое послевкусие.",
     "category": "wine",
     "price": 3200,
-    "image": "https://via.placeholder.com/200x300?text=Screaming+Eagle"
+    "image": "https://via.placeholder.com/200x300?text=Screaming+Eagle",
+    "tags": ["wine", "usa", "red", "premium"]
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "description": "Эксклюзивный коньяк, объединяющий спирты вековой выдержки.",
     "category": "cognac",
     "price": 2800,
-    "image": "https://via.placeholder.com/200x300?text=Courvoisier"
+    "image": "https://via.placeholder.com/200x300?text=Courvoisier",
+    "tags": ["cognac", "aged", "french"]
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "description": "Один из самых дорогих виски в мире, выпущенный ограниченным тиражом.",
     "category": "whiskey",
     "price": 25000,
-    "image": "https://via.placeholder.com/200x300?text=Dalmore+62"
+    "image": "https://via.placeholder.com/200x300?text=Dalmore+62",
+    "tags": ["whiskey", "scotch", "rare", "aged"]
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "description": "Легендарное бордоское вино. Глубокий, мощный вкус с нотами трюфеля, шелковицы и темных специй.",
     "category": "wine",
     "price": 4500,
-    "image": "https://via.placeholder.com/200x300?text=Petrus+Pomerol"
+    "image": "https://via.placeholder.com/200x300?text=Petrus+Pomerol",
+    "tags": ["wine", "french", "red", "aged"]
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "description": "Один из самых редких односолодовых виски. Выдерживался полвека в дубовых бочках, имеет богатый медовый аромат.",
     "category": "whiskey",
     "price": 35000,
-    "image": "https://via.placeholder.com/200x300?text=Glenfiddich+50"
+    "image": "https://via.placeholder.com/200x300?text=Glenfiddich+50",
+    "tags": ["whiskey", "scotch", "aged", "rare"]
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "description": "Вершина коньячного искусства, купаж из сотен редких о-де-ви, некоторым из которых более 100 лет.",
     "category": "cognac",
     "price": 3800,
-    "image": "https://via.placeholder.com/200x300?text=LOr+de+Jean+Martell"
+    "image": "https://via.placeholder.com/200x300?text=LOr+de+Jean+Martell",
+    "tags": ["cognac", "french", "aged", "luxury"]
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "description": "Самое престижное вино Бургундии. Невероятная элегантность, шелковистая текстура и богатство ароматов.",
     "category": "wine",
     "price": 18000,
-    "image": "https://via.placeholder.com/200x300?text=Romanee-Conti"
+    "image": "https://via.placeholder.com/200x300?text=Romanee-Conti",
+    "tags": ["wine", "french", "red", "rare"]
   },
   {
     "id": 15,
@@ -117,8 +131,7 @@
     "description": "Шедевр японского купажа. Обладает глубоким, сложным и невероятно мягким вкусом с нотами мармелада и корицы.",
     "category": "whiskey",
     "price": 4800,
-    "image": "https://via.placeholder.com/200x300?text=Hibiki+30"
+    "image": "https://via.placeholder.com/200x300?text=Hibiki+30",
+    "tags": ["whiskey", "japanese", "aged", "premium"]
   }
 ]
-
-
